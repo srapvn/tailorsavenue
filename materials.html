@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+	<title>The Tailors' Avenue</title>
+
+
+
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+
+
+	<meta name="description" content="The Tailors' Avenue: the best marketplace for high quality, affordable bespoke (made-to-measure) clothes. No more mass production - have your clothes tailored for your unique tastes and styles.">
+
+
+
+	<meta name="Author" content="Khanh Nguyen; Trung Nguyen">
+
+
+
+	<!-- Bootstrap -->
+
+
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+
+	<style type="text/css">
+
+
+
+	body {
+
+
+
+		padding-top: 60px;
+
+
+
+		padding-bottom: 40px;
+
+
+
+	}
+
+
+
+	</style>
+
+
+
+</head>
+
+
+
+<body>
+
+<div class="container">
+	<div class = "row">
+		<div class = "span12" style="background-color: #f3f3f3;">
+
+
+<form id="visualStyle" name="visualStyle" action="visualstyles.php?saving=1" method="post" enctype='multipart/form-data'>
+
+<!-- INFO -->
+<div class="container">
+	<div class = "row">
+		<div class = "span12"  >
+			<span class="badge badge-info"><h4>Information</h4></span>
+
+			<div class="form-horizontal">
+				<div class="control-group">
+					<label class = "control-label">Your Name</label>
+				  	<div class="controls">
+				  		<input type="text" name="customerName" class="input-large" placeholder="Enter your name">
+				  	</div>
+				</div>
+				<div class="control-group">
+					<label class = "control-label">Email Address</label>
+			  		<div class="controls">
+			  			<input type="email" name="customerEmail" class="input-large" placeholder="Enter your email">
+			  		</div>
+			  	</div>
+			  	<div class="control-group">
+					<label class = "control-label">Occasion [optional]</label>
+			  		<div class="controls">
+			  			<input type="text" name="customerOccasion" class="input-large" placeholder="which occasions to wear">
+			  			<div class = "help-inline">Help the tailor advice you better</div>
+			  		</div>
+			  		
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END INFO -->
+<br>
+<!-- SHIRT MATERIAL -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12"  style="background-color: lightgray;">
+			<span class="badge badge-info"><h4>Shirt Material</h4></span>
+			<br>
+			<br>
+			<div class="form-inline">
+				<label>&nbsp;Material</label>
+			  	<input type="text" name="shirtMaterial" class="input-large" placeholder="name from the link / any color">
+				<a href="shirtmaterials.html" class="btn btn-warning" target="_blank">Link to shirt materials</a>
+			</div>
+			<div class = "help-inline">Or let the tailor choose it for you (but let him know your favorite colors and patterns)</div>
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+<!-- END SHIRT MATERIAL -->
+
+<br>
+<!-- COLOR and PATTERN -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12" >
+			<span class="badge badge-info"><h4>Favorite Colors and Patterns</h4></span>
+			<br>
+			&nbsp;Dark, Light, Bright, Colorful, Black, Blue, Brown, Gray, Green, Navy, Pink, Purple, Red, White, Yellow, etc.
+			<div class="form-inline">
+				<label><span class="badge badge-warning">Colors</badge></label>
+			  	<input type="text" name="favoriteColors" class="input-large" placeholder="multiple items">
+			</div>
+			<br>
+			&nbsp;Plain, Horizontal/Vertical line patterns, Cross patterns, Flowers, etc.
+			<div class="form-inline">
+				<label><span class="badge badge-warning">Patterns</badge></label>
+			  	<input type="text" name="favoritePatterns" class="input-large" placeholder="multiple items">
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- END COLOR and PATTERN -->
+<br>
+
+<br>
+<!-- FIT CHOICE -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12"  style="background-color: lightgray;">
+			<span class="badge badge-info"><h4>Fit Choice</h4></span>
+			<br>
+			<div class = "span6">
+				<div class = "row">
+					<div class = "span2">
+						<img src = "visualstyles/img/fitchoice/slim.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="fitchoiceRadio" id="fitchoiceRadio1" value="Slim">
+						  	<h6>Slim</h6>
+						</label>
+					</div>
+
+					<div class = "span2">
+						<img src = "visualstyles/img/fitchoice/tailored.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="fitchoiceRadio" id="fitchoiceRadio2" value="Tailored" checked>
+						  	<h6>Tailored</h6>
+						</label>
+					</div>
+
+					<div class = "span2">
+						<img src = "visualstyles/img/fitchoice/standard.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="fitchoiceRadio" id="fitchoiceRadio3" value="Standard">
+						  	<h6>Standard</h6>
+						</label>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END FIT CHOICE -->
+<br>
+
+<br>
+<!-- COLLAR -->
+<div class="container-fluid">
+	<div class = "row-fluid">
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Collars</h4></span>
+			<br>
+				<div class = "row-fluid">
+					<div class = "span2">
+						<img src = "visualstyles/img/collar/button_down.png" class="img-polaroid">
+						
+						<label class="radio">
+							<input type="radio" name="collarRadio" id="collarRadio1" value="Button Down">
+						  	<h6>Button Down</h6>
+						</label>
+						
+					</div>
+					<div class = "span2">
+						<img src = "visualstyles/img/collar/cutaway.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="collarRadio" id="collarRadio2" value="Cut Away">
+						  	<h6>Cut Away</h6>
+						</label>
+					</div>
+					<div class = "span2">
+						<img src = "visualstyles/img/collar/medium_point.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="collarRadio" id="collarRadio3" value="Medium Point" checked>
+						  	<h6>Medium Point</h6>
+						</label>
+					</div>
+					<div class = "span2">
+						<img src = "visualstyles/img/collar/pinned.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="collarRadio" id="collarRadio4" value="Pinned">
+						  	<h6>Pinned</h6>
+						</label>
+					</div>
+					<div class = "span2">
+						<img src = "visualstyles/img/collar/spread.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="collarRadio" id="collarRadio5" value="Spread">
+						  	<h6>Spread</h6>
+						</label>
+					</div>
+					<div class = "span2">
+						<img src = "visualstyles/img/collar/tuxedo.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="collarRadio" id="collarRadio6" value="Tuxedo">
+						  	<h6>Tuxedo</h6>
+						</label>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- END COLLAR -->
+
+<br>
+
+<!-- CUFF -->
+<div class="container-fluid"  style="background-color: lightgray;">
+	<div class = "row-fluid"  >
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Cuff</h4></span>
+			<br>
+			<div class = "row-fluid">
+				<div class = "span2">
+					<img src = "visualstyles/img/cuffs/french_cuffs_angled.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="cuffRadio" id="cuffRadio1" value="French Cuffs Angled" checked>
+					  	<h6>French Cuffs Angled</h6>
+					</label>
+					
+				</div>
+				<div class = "span2">
+					<img src = "visualstyles/img/cuffs/french_cuffs_barrel.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="cuffRadio" id="cuffRadio2" value="French Cuffs Barrel">
+					  	<h6>French Cuffs Barrel</h6>
+					</label>
+				</div>
+				<div class = "span2">
+					<img src = "visualstyles/img/cuffs/one_button_angled.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="cuffRadio" id="cuffRadio3" value="One Button Angled">
+					  	<h6>One Button Angled</h6>
+					</label>
+				</div>
+				<div class = "span2">
+					<img src = "visualstyles/img/cuffs/two_button_angled.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="cuffRadio" id="cuffRadio4" value="Two Button Angled">
+					  	<h6>Two Button Angled</h6>
+					</label>
+				</div>
+				<div class = "span2">
+					<img src = "visualstyles/img/cuffs/two_button_barrel.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="cuffRadio" id="cuffRadio5" value="Two Button Barrel">
+					  	<h6>Two Button Barrel</h6>
+					</label>
+				</div>
+				<div class = "span2">
+					<img src = "visualstyles/img/tailorschoice.png" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="cuffRadio" id="cuffRadio6" value="Tailor's Choice">
+					  	<h6>Tailor's Choice</h6>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END CUFF -->
+
+<br>
+<!-- MONOGRAM -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Monogram</h4></span>
+			<br>
+			<br>
+			<div class = "row">
+				<div class = "span1 offset1">
+					<img src = "visualstyles/img/monogram/font_diamond.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="monogramRadio" id="monogramRadio1" value="Diamond" checked>
+					  	<h6>Diamond</h6>
+					</label>
+					
+				</div>
+				<div class = "span1">
+					<img src = "visualstyles/img/monogram/font_standard.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="monogramRadio" id="monogramRadio2" value="Normal">
+					  	<h6>Normal</h6>
+					</label>
+				</div>
+				<br>
+				<div class = "span6">
+					<div class="form-inline">
+						<label>&nbsp;Name</label>
+					  	<input type="text" name="monogramName" class="input-small" placeholder="3 letters">
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+</div>
+<!-- END MONOGRAM -->
+
+<br>
+<!-- TRIM -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12"  style="background-color: lightgray;">
+			<span class="badge badge-info"><h4>TRIM</h4></span>
+			<br>
+			<div class = "span4">
+				<div class = "row">
+					<div class = "span2">
+						<img src = "visualstyles/img/trim/trim1.png" class="img-polaroid">
+						
+					</div>
+					<div class = "span2">
+						<img src = "visualstyles/img/trim/trim2.png" class="img-polaroid" width="110" height="120" >
+
+					</div>
+				</div>
+			</div>
+				<br>
+				<div class="form-inline">
+					<label>Material</label>
+				  	<input type="text" name="trimMaterial" class="input-large" placeholder="material's name">
+					<a href="shirtmaterials.html" class="btn btn-warning" target="_blank">Link to materials</a>
+
+				</div> 
+				<div class = "help-inline">Or let the tailor choose it for you</div>
+				<br>
+			
+		</div>
+	</div>
+</div>
+<!-- END TRIM -->
+
+<br>
+<!-- OPTIONAL -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12">
+			<span class="badge badge-info"><h4>OPTIONAL</h4></span>
+			<br>
+			<div class = "row" >
+				<div class = "span7 offset1">
+					<table class="table table-striped table-condensed">
+						<tbody>
+							<tr><td>
+								<label class="checkbox">
+								  <input type="checkbox" name="checkPocket" value="true">
+								  Chest pocket
+								</label>
+							</td></tr>
+							<tr><td>
+								<label class="checkbox">
+								  <input type="checkbox" name="seamlessPlanket" value="true">
+								  Seamless planket
+								</label>
+								The Standard Placket is the most common style, involving a fabric strip with stitches down each side. The Seamless Placket is the cleaner option where the shirt front is folded over to show only a creased edge, giving the shirt a more formal look.
+							</td></tr>
+							<tr><td>
+							<label class="checkbox">
+							  <input type="checkbox" name="whiteCollars" value="true">
+							  White collars
+							</label>
+							Get your dress shirt with a contrasting white collar.
+							</td></tr>
+							<tr><td>
+							<label class="checkbox">
+							  <input type="checkbox" name="whiteCuffs" value="true">
+							  White cuffs
+							</label>
+							Shirts with White Cuffs will use a white fabric for the cuffs instead of the fabric of the shirt. Like the White Collar, white cuffs add contrast to your shirt.
+							</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END OPTIONAL -->
+
+
+<br>
+<!-- BACK STYLE -->
+<div class="container-fluid"  style="background-color: lightgray;">
+	<div class = "row-fluid" >
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Back Style</h4></span>
+			<br>
+			<div class = "row-fluid">
+				<div class = "span2">
+					<img src = "visualstyles/img/backstyle/BackStyleTwoDarts.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="backstyleRadio" id="backstyleRadio1" value="Two Darts" checked>
+					  	<h6>Two Darts</h6>
+					</label>
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/backstyle/BoxPleatinBack.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="backstyleRadio" id="backstyleRadio2" value="Box Pleat">
+					  	<h6>Box Pleat</h6>
+					</label>
+				</div>
+				
+				
+				<div class = "span2">
+					<img src = "visualstyles/img/backstyle/InvertedPleatBack.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="backstyleRadio" id="backstyleRadio3" value="Inverted Pleat">
+					  	<h6>Inverted Pleat</h6>
+					</label>
+				</div>
+				
+				<div class = "span2">
+					<img src = "visualstyles/img/backstyle/PlainBack.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="backstyleRadio" id="backstyleRadio4" value="Plain Back">
+					  	<h6>Plain Back</h6>
+					</label>
+				</div>
+				
+				<div class = "span2">
+					<img src = "visualstyles/img/backstyle/SidePleats1oneachside.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="backstyleRadio" id="backstyleRadio5" value="Side Pleats">
+					  	<h6>Side Pleats</h6>
+					</label>
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/tailorschoice.png" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="backstyleRadio" id="backstyleRadio6" value="Tailor's Choice">
+					  	<h6>Tailor's Choice</h6>
+					</label>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- BACK STYLE -->
+
+
+<br>
+<!-- FRONT STYLE -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Front Style</h4></span>
+			<br>
+			<div class = "row">
+				<div class = "span2">
+					<img src = "visualstyles/img/frontstyle/PlacketFlyFrontHiddenButtons.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="frontstyleRadio" id="frontstyleRadio1" value="Placket Hidden" checked>
+					  	<h6>Placket Hidden</h6>
+					</label>
+				</div>
+				
+				<div class = "span2">
+					<img src = "visualstyles/img/frontstyle/PlacketFront.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="frontstyleRadio" id="frontstyleRadio2" value="Placket">
+					  	<h6>Placket</h6>
+					</label>
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/frontstyle/PlainFlyFrontHiddenButtons.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="frontstyleRadio" id="frontstyleRadio3" value="Plain Hidden">
+					  	<h6>Plain Hidden</h6>
+					</label>
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/frontstyle/PlainFront.JPG" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="frontstyleRadio" id="frontstyleRadio4" value="Plain">
+					  	<h6>Plain</h6>
+					</label>
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/tailorschoice.png" class="img-polaroid">
+					<label class="radio">
+						<input type="radio" name="frontstyleRadio" id="frontstyleRadio5" value="Tailor's Choice">
+					  	<h6>Tailor's Choice</h6>
+					</label>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FRONT STYLE -->
+
+<br>
+<!-- POCKET STYLE -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12"  style="background-color: lightgray;">
+			<span class="badge badge-info"><h4>Pocket Style</h4></span>
+			<br>
+			<div class = "span10">
+				<div class = "row">
+
+					<div class = "span2">
+						<img src = "visualstyles/img/pocket/none.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="pocketRadio" id="pocketRadio1" value="None" checked>
+						  	<h6>None</h6>
+						</label>
+					</div>
+
+					<div class = "span2">
+						<img src = "visualstyles/img/pocket/ClassicPocket.JPG" width="120" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="pocketRadio" id="pocketRadio2" value="Classic">
+						  	<h6>Classic</h6>
+						</label>
+					</div>
+
+					<div class = "span2">
+						<img src = "visualstyles/img/pocket/RegularPocket.JPG" width="120" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="pocketRadio" id="pocketRadio3" value="Regular">
+						  	<h6>Regular</h6>
+						</label>
+					</div>
+
+					<div class = "span2">
+						<img src = "visualstyles/img/pocket/RoundedCornerPocket.JPG" width="120" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="pocketRadio" id="pocketRadio4" value="Rounded Corner">
+						  	<h6>Rounded Corner</h6>
+						</label>
+					</div>
+
+					<div class = "span2">
+						<img src = "visualstyles/img/tailorschoice.png" class="img-polaroid">
+						<label class="radio">
+							<input type="radio" name="pocketRadio" id="pocketRadio5" value="Tailor's Choice">
+						  	<h6>Tailor's Choice</h6>
+						</label>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- POCKET STYLE -->
+<br>
+<br>
+<!-- USUAL PROBLEMS -->
+
+<div class="container">
+	<div class = "row" >
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Usual Problems</h4></span>
+			<br>
+			<div class = "row" >
+				<div class = "span6 offset1">
+					<table class="table table-striped table-hover table-condensed">
+						<tbody>
+							<tr><td>
+								<label class="checkbox">
+								  <input type="checkbox" name="problemSleevesShort" value="true">
+								  Sleeves too short : 
+								</label>
+							</td></tr>
+							<tr><td>
+								<label class="checkbox">
+								  <input type="checkbox" name="problemSleevesLong"value="true">
+								  Sleeves too long
+								</label>
+							</td></tr>
+							<tr><td>
+								<label class="checkbox">
+								  <input type="checkbox" name="problemShouldersNarrow"value="true">
+								  Shirts on the shoulders too narrow 
+								</label>
+							</td></tr>
+							<tr><td>
+								<label class="checkbox">
+								  <input type="checkbox" name="problemShouldersFar"value="true">
+								  Shirts on the shoulders too far 
+								</label>
+							</td></tr>
+							<tr><td>
+								<label class="checkbox">
+								  <input type="checkbox" name="problemWaistTight" value="true">
+								  Shirts at the waist too tight 
+								</label>
+							</td></tr>
+							<tr><td>
+								<label class="checkbox">
+								  <input type="checkbox" name="problemWaistFar" value="true">
+								  Shirts at the waist too far 
+								</label>
+							</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END USUAL PROBLEMS -->
+
+
+<br>
+<br>
+<br>
+<!-- SUBMIT BUTTON -->
+
+<div class="container">
+	<div class = "row" >
+		<div class = "span12">
+			<button type="submit" class="btn btn-large btn-block btn-primary">Submit
+			</button>
+			<button type="reset" class="btn btn-large btn-block">Reset
+			</button>
+		</div>
+	</div>
+</div>
+
+
+</form>
+
+</div></div></div>
+
+<!-- END SOME PICTURE-->
+
+	<!-- Javascript at the end so loading faster -->
+
+
+
+	<script src="js/jquery-1.9.1.js"></script> 
+
+
+
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+</body>	
+
+
+
+</html>	

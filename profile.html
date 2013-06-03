@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+	<title>The Tailors' Avenue</title>
+
+
+
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+
+
+	<meta name="description" content="The Tailors' Avenue: the best marketplace for high quality, affordable bespoke (made-to-measure) clothes. No more mass production - have your clothes tailored for your unique tastes and styles.">
+
+
+
+	<meta name="Author" content="Khanh Nguyen; Trung Nguyen">
+
+
+
+	<!-- Bootstrap -->
+
+
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/responsive-video.css" rel="stylesheet" media="screen">
+
+
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<style type="text/css">
+
+
+	body {
+
+
+
+		padding-top: 60px;
+
+
+
+		padding-bottom: 40px;
+
+
+
+	}
+
+
+
+	</style>
+
+
+
+</head>
+
+
+
+<body>
+
+<div class="container">
+	<div class = "row">
+		<div class = "span12" style="background-color: #f3f3f3;">
+
+
+<form id="visualStyle" name="visualStyle" action="profile.php?saving=1" method="post" enctype='multipart/form-data'>
+
+<!-- INFO -->
+<div class="container">
+	<div class = "row">
+		<div class = "span12"  style="background-color: lightgray;" >
+			<span class="badge badge-info"><h4>Information</h4></span>
+
+			<div class="form-horizontal">
+				<div class="control-group">
+					<label class = "control-label">Your Name</label>
+				  	<div class="controls">
+				  		<input type="text" name="customerName" class="input-large" placeholder="Enter your name">
+				  	</div>
+				</div>
+				<div class="control-group">
+					<label class = "control-label">Email Address</label>
+			  		<div class="controls">
+			  			<input type="email" name="customerEmail" class="input-large" placeholder="Enter your email">
+			  		</div>
+			  	</div>
+			  	<div class="control-group">
+					<label class = "control-label">Age</label>
+			  		<div class="controls">
+			  			<input type="text" name="customerAge" class="input-large" placeholder="Enter your age">
+			  		</div>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END INFO -->
+<br>
+<!-- PERSONAL PROFILE -->
+<!-- Note: input type = number is from HTML5, does not work for Firefox -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Body Measurements</h4></span>
+			<br>
+			<br>
+			<div class="row">
+
+				<div class="span3">
+					<div class="form-horizontal">
+						<div class="control-group">
+							<label class = "control-label">Neck</label>
+						  	<div class="controls">
+						  		<div class="input-append">
+						  			<input type="number" name="neckSize" class="input-small">
+						  			<span class="add-on">cm</span>
+						  		</div>
+						  	</div>
+						</div>
+						<div class="control-group">
+							<label class = "control-label">Shoulder</label>
+					  		<div class="controls">
+					  			<div class="input-append">
+					  				<input type="number" name="shoulderSize" class="input-small">
+					  				<span class="add-on">cm</span>
+						  		</div>
+					  		</div>
+					  	</div>
+						<div class="control-group">
+							<label class = "control-label">Shirt length</label>
+					  		<div class="controls">
+					  			<div class="input-append">
+						  			<input type="number" name="shirtSize" class="input-small">
+						  			<span class="add-on">cm</span>
+						  		</div>
+					  		</div>
+					  	</div>
+						<div class="control-group">
+							<label class = "control-label">Stomach</label>
+					  		<div class="controls">
+					  			<div class="input-append">
+						  			<input type="number" name="stomachSize" class="input-small">
+						  			<span class="add-on">cm</span>
+						  		</div>
+					  		</div>
+					  	</div>
+						<div class="control-group">
+							<label class = "control-label">Waist</label>
+					  		<div class="controls">
+					  			<div class="input-append">
+						  			<input type="number" name="waistSize" class="input-small">
+						  			<span class="add-on">cm</span>
+						  		</div>
+					  		</div>
+					  	</div>
+						<div class="control-group">
+							<label class = "control-label">Sleeve length</label>
+					  		<div class="controls">
+						  		<div class="input-append">
+						  			<input type="number" name="sleeveSize" class="input-small">
+						  			<span class="add-on">cm</span>
+						  		</div>
+					  		</div>
+					  	</div>
+					  					<div class="control-group">
+							<label class = "control-label">Bicep</label>
+					  		<div class="controls">
+						  		<div class="input-append">
+						  			<input type="number" name="bicepSize" class="input-small">
+						  			<span class="add-on">cm</span>
+						  		</div>
+					  		</div>
+					  	</div>
+						<div class="control-group">
+							<label class = "control-label">Wrist</label>
+					  		<div class="controls">
+						  		<div class="input-append">
+						  			<input type="number" name="wristSize" class="input-small">
+						  			<span class="add-on">cm</span>
+						  		</div>
+					  		</div>
+					  	</div>
+
+					</div>
+				</div>
+
+				<div class="span6 offset2">
+					<div class="flex-video">
+						<iframe width="480" height="360" src="http://www.youtube.com/embed/r2mpnRL3AlM" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END PERSONAL PROFILE -->
+<br>
+<!-- BODY SHAPE -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12"   style="background-color: lightgray;">
+			<span class="badge badge-info"><h4>BODY SHAPE</h4></span>
+			<br>
+			<div class = "row" >
+				<div class = "span8 offset1">
+					<table class="table table-bordered table-condensed" style="background-color: #f3f3f3;">
+						<thead>
+							<tr>
+								<th>Shoulders</th>
+								<th>Chest	</th>
+								<th>Stomach	</th>
+								<th>Posture</th>
+							</tr>
+						<tbody>
+							<tr>
+								<td>
+									<img src = "visualstyles/img/bodyshape/shoulders_square.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="shoulderRadio" id="shoulderRadio1" value="Square">
+									  	<h6>Square</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/chest_muscular.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="chestRadio" id="chestRadio1" value="Muscular">
+									  	<h6>Muscular</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/stomach_flat.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="stomachRadio" id="stomachRadio1" value="Flat">
+									  	<h6>Flat</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/posture_flat.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="postureRadio" id="postureRadio1" value="Flat">
+									  	<h6>Flat</h6>
+									</label>
+								</td>
+
+							</tr>
+							<tr>
+								<td>
+									<img src = "visualstyles/img/bodyshape/shoulders_normal.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="shoulderRadio" id="shoulderRadio2" value="Normal" checked>
+									  	<h6>Normal</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/chest_normal.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="chestRadio" id="chestRadio2" value="Normal" checked>
+									  	<h6>Normal</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/stomach_average.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="stomachRadio" id="stomachRadio2" value="Average" checked>
+									  	<h6>Average</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/posture_normal.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="postureRadio" id="postureRadio2" value="Normal" checked>
+									  	<h6>Normal</h6>
+									</label>
+								</td>
+
+							</tr>
+							<tr>
+								<td>
+									<img src = "visualstyles/img/bodyshape/shoulders_sloping.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="shoulderRadio" id="shoulderRadio2" value="Sloping">
+									  	<h6>Sloping</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/chest_husky_hefty.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="chestRadio" id="chestRadio3" value="Husky Hefty">
+									  	<h6>Husky Hefty</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/stomach_rounded.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="stomachRadio" id="stomachRadio3" value="Rounded">
+									  	<h6>Rounded</h6>
+									</label>
+								</td>
+
+								<td>
+									<img src = "visualstyles/img/bodyshape/posture_hunched.png" class="img-polaroid">
+									<label class="radio">
+										<input type="radio" name="postureRadio" id="postureRadio3" value="Hunched">
+									  	<h6>Hunched</h6>
+									</label>
+								</td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END BODY SHAPE -->
+<br>
+<br>
+<!-- SKIN COLOR -->
+<div class="container-fluid">
+	<div class = "row-fluid">
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Skin Color</h4></span>
+			<br>
+			<div class = "row-fluid">
+				<div class = "span2">
+					<img src = "visualstyles/img/skincolor/olive.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="skinRadio" id="skinRadio1" value="Olive" checked>
+					  	<h6>Olive</h6>
+					</label>
+					
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/skincolor/light.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="skinRadio" id="skinRadio2" value="Light" >
+					  	<h6>Light</h6>
+					</label>
+					
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/skincolor/lighttan.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="skinRadio" id="skinRadio3" value="Light Tan" >
+					  	<h6>Light Tan</h6>
+					</label>
+					
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/skincolor/darktan.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="skinRadio" id="skinRadio4" value="Dark Tan" >
+					  	<h6>Dark Tan</h6>
+					</label>
+					
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/skincolor/lightbrown.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="skinRadio" id="skinRadio5" value="Light Brown" >
+					  	<h6>Light Brown</h6>
+					</label>
+					
+				</div>
+
+				<div class = "span2">
+					<img src = "visualstyles/img/skincolor/darkbrown.png" class="img-polaroid">
+					
+					<label class="radio">
+						<input type="radio" name="skinRadio" id="skinRadio6" value="Dark Brown" >
+					  	<h6>Dark Brown</h6>
+					</label>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END SKIN COLOR -->
+<br>
+<!-- FACE SHAPE -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12"  style="background-color: lightgray;">
+			<span class="badge badge-info"><h4>Face Shape</h4></span>
+			<br>
+			<div class = "span3" >
+				<label class="radio">
+					<input type="radio" name="faceRadio" id="faceRadio1" value="Sharp-edged" checked>
+				  	<h6>Sharp-edged</h6>
+				</label>
+
+				<label class="radio">
+					<input type="radio" name="faceRadio" id="faceRadio2" value="Normal">
+				  	<h6>Normal</h6>
+				</label>
+
+				<label class="radio">
+					<input type="radio" name="faceRadio" id="faceRadio3" value="Round">
+				  	<h6>Round</h6>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END FACE SHAPE -->
+
+<br>
+
+<!-- Personal Pictures -->
+<div class="container">
+	<div class = "row" >
+		<div class = "span12">
+			<span class="badge badge-info"><h4>Personal Pictures</h4></span>
+			<br>
+			<div class = "row">
+				<div class = "span10 offset1">
+					Upload here some your pictures (tight clothing if possible), body and/or face [max. 2Mb] [optional] 
+					<br>
+		            <input class="input-file" name="fileInput1" id="fileInput1" type="file">  <br>
+		            <input class="input-file" name="fileInput2" id="fileInput2" type="file"> <br>
+		            <input class="input-file" name="fileInput3" id="fileInput3" type="file"> 
+		        </div>
+		    </div>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<!-- SUBMIT BUTTON -->
+
+<div class="container">
+	<div class = "row" >
+		<div class = "span12">
+			<button type="submit" class="btn btn-large btn-block btn-primary">Submit
+			</button>
+			<button type="reset" class="btn btn-large btn-block">Reset
+			</button>
+		</div>
+	</div>
+</div>
+
+
+</form>
+
+</div></div></div>
+
+<!-- END SOME PICTURE-->
+
+	<!-- Javascript at the end so loading faster -->
+
+
+
+	<script src="js/jquery-1.9.1.js"></script> 
+
+
+
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+</body>	
+
+
+
+</html>	

@@ -1,0 +1,18 @@
+customerName = Khanh Nguyen
+customerEmail = le.nguyen@epfl.ch
+customerAge = 25
+neckSize = 2
+shoulderSize = 12
+shirtSize = 12
+stomachSize = 12
+waistSize = 12
+sleeveSize = 12
+bicepSize = 12
+wristSize = 12
+shoulderRadio = Normal
+chestRadio = Normal
+stomachRadio = Average
+postureRadio = Normal
+skinRadio = Olive
+faceRadio = Sharp-edged
+---------------
